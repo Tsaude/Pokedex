@@ -60,7 +60,7 @@
     
     
     if(![[NSFileManager defaultManager]fileExistsAtPath:myListPath]){
-        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"h" ofType:@"plist"] toPath:myListPath error:nil];
+        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"hRSE" ofType:@"plist"] toPath:myListPath error:nil];
     }
     
     self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:myListPath];
