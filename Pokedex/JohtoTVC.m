@@ -42,7 +42,7 @@
     for(int x = 1; x<=self.pokedex.count; x++){
         NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%d", x]];
         NSString* picString = [[pokeDict objectForKey:@"pic"] substringToIndex:3];
-         NSLog(@"%@", picString);
+         //NSLog(@"%@", picString);
         Pokemon* pkm = [[Pokedex sharedPokedex].pokeList objectAtIndex:picString.intValue -1];
         [self.filteredPokedexChecker addObject:pkm];
     }

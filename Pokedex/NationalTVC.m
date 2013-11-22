@@ -28,6 +28,7 @@
 }
 
 -(NSString*)docsDir{
+    //helper method
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
 }
 
@@ -50,14 +51,15 @@
     listPath = [[self docsDir] stringByAppendingPathComponent:@"nat.plist"];
     myListPath = listPath;
     if(![[NSFileManager defaultManager]fileExistsAtPath:listPath]){
+        //create new plist in device, using contents of the plist.
         [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"nat" ofType:@"plist"] toPath:listPath error:nil];
     }
-    self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:listPath];
-    self.filteredPokedex = [[NSMutableArray alloc]init];
-    self.natPokedex = self.pokedex;
-    self.filteredPokedexChecker = [NSMutableArray arrayWithCapacity:self.pokedex.count];
+    self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:listPath];//create your pokedex
+    self.filteredPokedex = [[NSMutableArray alloc]init]; //create array for filtered pokedex
+    self.natPokedex = self.pokedex; //national dex specific
+    self.filteredPokedexChecker = [NSMutableArray arrayWithCapacity:self.pokedex.count]; //create array to store the search items
     
-    NSLog(@"starting filter pokedex checker loop");
+    NSLog(@"starting filter pokedex checker loop"); //add pokemon to said array
     for(int x = 1; x<=self.pokedex.count; x++){
         NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%d", x]];
         NSString* picString = [[pokeDict objectForKey:@"pic"] substringToIndex:3];
@@ -65,8 +67,11 @@
         [self.filteredPokedexChecker addObject:pkm];
     }
     NSLog(@"I be hurr");
+    self.refreshControl = [[UIRefreshControl alloc] init]; //create our refresh control
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     [self.tableView reloadData];
+
+    
     [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
 
 }
@@ -246,7 +251,7 @@
     [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
      [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
     
-    
+
     // Return YES to cause the search result table view to be reloaded.
     return YES;
 }
@@ -257,10 +262,12 @@
     //refresh logic
     // show the spinner if it's not already showing
     [self.refreshControl beginRefreshing];
-    dispatch_queue_t q = dispatch_queue_create("table view loading queue", NULL); dispatch_async(q, ^{
+    dispatch_queue_t q = dispatch_queue_create("table view loading queue", NULL);
+    dispatch_async(q, ^{
         [[Pokedex sharedPokedex] RefreshPokedex];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[Pokedex sharedPokedex] UpdatePokedex];        
+        
+       dispatch_async(dispatch_get_main_queue(), ^{
+            [[Pokedex sharedPokedex] UpdatePokedex];
             NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
             [formatter setDateFormat:@"MMM d, h:mm a"];
             NSString* lastUpdated = [NSString stringWithFormat:@"Last updated on %@", [formatter stringFromDate:[NSDate date]]];

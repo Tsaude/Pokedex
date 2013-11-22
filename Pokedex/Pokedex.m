@@ -47,15 +47,20 @@
     if (!self.isCaughtArray){
         
         PFQuery *query = [PFQuery queryWithClassName:@"temporary"];
-        PFObject *isCaughtArrayObject = [query getObjectWithId:@"BRWtAyb26Q"];
-        self.isCaughtObject = isCaughtArrayObject;
-        self.isCaughtArray = (NSMutableArray *)[self.isCaughtObject objectForKey:@"isCaughtArray"];
-        NSLog(@"getting is caught array");
+        //PFObject *isCaughtArrayObject = [query getObjectWithId:@"BRWtAyb26Q"];
+        
+        [query getObjectInBackgroundWithId:@"BRWtAyb26Q" block:^(PFObject* object, NSError * error){
+            self.isCaughtObject = object;
+            self.isCaughtArray = (NSMutableArray *)[self.isCaughtObject objectForKey:@"isCaughtArray"];
+        }];
+        
+
+       // NSLog(@"getting is caught array");
                
     }else{
         [self.isCaughtObject refresh];
         self.isCaughtArray = [self.isCaughtObject objectForKey:@"isCaughtArray"];
-        NSLog(@"%@",[[self.isCaughtArray objectAtIndex:0] stringValue]);
+        //NSLog(@"%@",[[self.isCaughtArray objectAtIndex:0] stringValue]);
     }
 }
 
@@ -90,10 +95,10 @@
         //caught = [[dict objectForKey:@"isCaught"] boolValue];
         Pokemon* pkm = [[Pokemon alloc]initWithName:[dict objectForKey:@"name"] number:[dict objectForKey:@"num"] image:[dict objectForKey:@"pic"]];
         pkm.caught = caught;
-        if (i == 1) {
-            NSLog(@"initialized: %s", pkm.caught ? "true" : "false");
-        }
-        NSLog(@"%d", i);
+        //if (i == 1) {
+         //   NSLog(@"initialized: %s", pkm.caught ? "true" : "false");
+        //}
+       // NSLog(@"%d", i);
         [self.pokeList insertObject:pkm atIndex:i-1];
         
         

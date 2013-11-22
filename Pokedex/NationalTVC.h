@@ -25,6 +25,7 @@
 @property (nonatomic) NSInteger numberCaughtPokemon;
 @property (nonatomic) NSInteger numberAvailablePokemon;
 
+
 -(NSString*)docsDir;
 -(int)countThePokemon;
 @end

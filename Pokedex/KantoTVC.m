@@ -50,6 +50,7 @@
     }
     self.numberCaughtPokemon = 0;//add
     self.numberAvailablePokemon = self.pokedex.count;//add
+   
 
 }
 
