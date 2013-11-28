@@ -720,13 +720,11 @@
 		1E9D095817EAAB2E002CBAD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */; };
 		1E9D095917EAAB2E002CBAD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093017EAAB2E002CBAD7 /* UIKit.framework */; };
 		1E9D095A17EAAB2E002CBAD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093217EAAB2E002CBAD7 /* Foundation.framework */; };
-		1EF692C318256BA4009C813F /* FriendTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692AD18256BA4009C813F /* FriendTVC.m */; };
 		1EF692C418256BA4009C813F /* HoennTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692AF18256BA4009C813F /* HoennTVC.m */; };
 		1EF692C518256BA4009C813F /* JohtoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B118256BA4009C813F /* JohtoTVC.m */; };
 		1EF692C618256BA4009C813F /* KantoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B318256BA4009C813F /* KantoTVC.m */; };
 		1EF692C718256BA4009C813F /* NationalTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B518256BA4009C813F /* NationalTVC.m */; };
 		1EF692CA18256BA4009C813F /* Pokedex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B918256BA4009C813F /* Pokedex.m */; };
-		1EF692CB18256BA4009C813F /* PokedexLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692BA18256BA4009C813F /* PokedexLoginViewController.m */; };
 		1EF692CC18256BA4009C813F /* PokedexTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692BC18256BA4009C813F /* PokedexTVC.m */; };
 		1EF692CD18256BA4009C813F /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692BE18256BA4009C813F /* Pokemon.m */; };
 		1EF692CE18256BA4009C813F /* SinnohTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692C018256BA4009C813F /* SinnohTVC.m */; };
@@ -1461,7 +1459,6 @@
 		1E9D094C17EAAB2E002CBAD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1E9D095617EAAB2E002CBAD7 /* PokedexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1EF692AD18256BA4009C813F /* FriendTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTVC.m; sourceTree = "<group>"; };
 		1EF692AE18256BA4009C813F /* HoennTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoennTVC.h; sourceTree = "<group>"; };
 		1EF692AF18256BA4009C813F /* HoennTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoennTVC.m; sourceTree = "<group>"; };
 		1EF692B018256BA4009C813F /* JohtoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JohtoTVC.h; sourceTree = "<group>"; };
@@ -1472,7 +1469,6 @@
 		1EF692B518256BA4009C813F /* NationalTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NationalTVC.m; sourceTree = "<group>"; };
 		1EF692B818256BA4009C813F /* Pokedex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokedex.h; sourceTree = "<group>"; };
 		1EF692B918256BA4009C813F /* Pokedex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pokedex.m; sourceTree = "<group>"; };
-		1EF692BA18256BA4009C813F /* PokedexLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokedexLoginViewController.m; sourceTree = "<group>"; };
 		1EF692BB18256BA4009C813F /* PokedexTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokedexTVC.h; sourceTree = "<group>"; };
 		1EF692BC18256BA4009C813F /* PokedexTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokedexTVC.m; sourceTree = "<group>"; };
 		1EF692BD18256BA4009C813F /* Pokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
@@ -1481,8 +1477,6 @@
 		1EF692C018256BA4009C813F /* SinnohTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinnohTVC.m; sourceTree = "<group>"; };
 		1EF692C118256BA4009C813F /* UnovaTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnovaTVC.h; sourceTree = "<group>"; };
 		1EF692C218256BA4009C813F /* UnovaTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnovaTVC.m; sourceTree = "<group>"; };
-		1EF692D018256BEB009C813F /* FriendTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTVC.h; sourceTree = "<group>"; };
-		1EF692D118256C78009C813F /* PokedexLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokedexLoginViewController.h; sourceTree = "<group>"; };
 		1EF692D218256D5F009C813F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2277,13 +2271,9 @@
 				1E18781218258D0C003259B9 /* plists */,
 				1E9D094817EAAB2E002CBAD7 /* MainStoryboard_iPhone.storyboard */,
 				1E9D094B17EAAB2E002CBAD7 /* MainStoryboard_iPad.storyboard */,
-				1EF692D018256BEB009C813F /* FriendTVC.h */,
-				1EF692AD18256BA4009C813F /* FriendTVC.m */,
 				1EC66E0B183BE57D00734983 /* Regions */,
 				1EF692B818256BA4009C813F /* Pokedex.h */,
 				1EF692B918256BA4009C813F /* Pokedex.m */,
-				1EF692D118256C78009C813F /* PokedexLoginViewController.h */,
-				1EF692BA18256BA4009C813F /* PokedexLoginViewController.m */,
 				1EF692BB18256BA4009C813F /* PokedexTVC.h */,
 				1EF692BC18256BA4009C813F /* PokedexTVC.m */,
 				1EF692BD18256BA4009C813F /* Pokemon.h */,
@@ -3129,8 +3119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF692C318256BA4009C813F /* FriendTVC.m in Sources */,
-				1EF692CB18256BA4009C813F /* PokedexLoginViewController.m in Sources */,
 				1EF692CE18256BA4009C813F /* SinnohTVC.m in Sources */,
 				1EF692C518256BA4009C813F /* JohtoTVC.m in Sources */,
 				1E9D093D17EAAB2E002CBAD7 /* main.m in Sources */,
