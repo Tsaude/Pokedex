@@ -66,7 +66,7 @@
         Pokemon* pkm = [[Pokedex sharedPokedex].pokeList objectAtIndex:picString.intValue -1];
         [self.filteredPokedexChecker addObject:pkm];
     }
-    NSLog(@"I be hurr");
+    
     self.refreshControl = [[UIRefreshControl alloc] init]; //create our refresh control
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     [self.tableView reloadData];
