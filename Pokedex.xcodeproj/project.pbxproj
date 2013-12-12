@@ -1531,6 +1531,7 @@
 				1E18781818258D15003259B9 /* kMount.plist */,
 			);
 			name = plists;
+			path = ../Files;
 			sourceTree = "<group>";
 		};
 		1E4097CB18402DF5008F849F /* Screenshots */ = {
