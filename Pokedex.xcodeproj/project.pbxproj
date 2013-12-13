@@ -3239,12 +3239,7 @@
 		1E9D096917EAAB2E002CBAD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tuckersaude/Developer/iOS\\ Pokedex/Pokedex",
-					"/Users/tuckersaude/Downloads/Pokedex-master\\ 3",
-					"/Users/tuckersaude/Developer/iOS\\ Pokedex/Pokedex/Pokedex",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Pokedex";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "Pokedex/Pokedex-Info.plist";
@@ -3256,12 +3251,7 @@
 		1E9D096A17EAAB2E002CBAD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tuckersaude/Developer/iOS\\ Pokedex/Pokedex",
-					"/Users/tuckersaude/Downloads/Pokedex-master\\ 3",
-					"/Users/tuckersaude/Developer/iOS\\ Pokedex/Pokedex/Pokedex",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Pokedex";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "Pokedex/Pokedex-Info.plist";
