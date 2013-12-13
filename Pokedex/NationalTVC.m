@@ -69,10 +69,13 @@
     
     self.refreshControl = [[UIRefreshControl alloc] init]; //create our refresh control
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    
+    
     [self.tableView reloadData];
 
     
     [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    
 
 }
 
