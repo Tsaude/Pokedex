@@ -57,11 +57,11 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    myListPath = [[self docsDir]stringByAppendingPathComponent:@"s.plist"];
+    myListPath = [[self docsDir]stringByAppendingPathComponent:@"sPT.plist"];
     
     
     if(![[NSFileManager defaultManager]fileExistsAtPath:myListPath]){
-        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"s" ofType:@"plist"] toPath:myListPath error:nil];
+        [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"sPT" ofType:@"plist"] toPath:myListPath error:nil];
     }
     
     self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:myListPath];

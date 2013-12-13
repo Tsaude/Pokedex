@@ -79,6 +79,11 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self refresh];
+}
+
 -(int)countThePokemon{
     int numberOfCaughtPokemon = 0;
     for(id key in self.pokedex){
