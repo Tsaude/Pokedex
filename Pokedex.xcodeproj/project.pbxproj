@@ -706,6 +706,7 @@
 		1E673A0C18538E0200D2057A /* 648MS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E67376A18538E0200D2057A /* 648MS.png */; };
 		1E673A0D18538E0200D2057A /* 648PMS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E67376B18538E0200D2057A /* 648PMS.png */; };
 		1E673A0E18538E0200D2057A /* 649MS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E67376C18538E0200D2057A /* 649MS.png */; };
+		1E874D3E185B70680010D043 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E874D3D185B70680010D043 /* Parse.framework */; };
 		1E9D093117EAAB2E002CBAD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093017EAAB2E002CBAD7 /* UIKit.framework */; };
 		1E9D093317EAAB2E002CBAD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093217EAAB2E002CBAD7 /* Foundation.framework */; };
 		1E9D093517EAAB2E002CBAD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093417EAAB2E002CBAD7 /* CoreGraphics.framework */; };
@@ -720,7 +721,6 @@
 		1E9D095817EAAB2E002CBAD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */; };
 		1E9D095917EAAB2E002CBAD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093017EAAB2E002CBAD7 /* UIKit.framework */; };
 		1E9D095A17EAAB2E002CBAD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093217EAAB2E002CBAD7 /* Foundation.framework */; };
-		1EB1D0F8185A8CA800A1B63B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB1D0F7185A8CA800A1B63B /* Parse.framework */; };
 		1EF692C418256BA4009C813F /* HoennTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692AF18256BA4009C813F /* HoennTVC.m */; };
 		1EF692C518256BA4009C813F /* JohtoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B118256BA4009C813F /* JohtoTVC.m */; };
 		1EF692C618256BA4009C813F /* KantoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692B318256BA4009C813F /* KantoTVC.m */; };
@@ -1442,6 +1442,7 @@
 		1E67376A18538E0200D2057A /* 648MS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 648MS.png; sourceTree = "<group>"; };
 		1E67376B18538E0200D2057A /* 648PMS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 648PMS.png; sourceTree = "<group>"; };
 		1E67376C18538E0200D2057A /* 649MS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 649MS.png; sourceTree = "<group>"; };
+		1E874D3D185B70680010D043 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Pokedex/Parse.framework; sourceTree = "<group>"; };
 		1E9D092D17EAAB2E002CBAD7 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D093017EAAB2E002CBAD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E9D093217EAAB2E002CBAD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1459,7 +1460,6 @@
 		1E9D094C17EAAB2E002CBAD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1E9D095617EAAB2E002CBAD7 /* PokedexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1EB1D0F7185A8CA800A1B63B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Pokedex/Parse.framework; sourceTree = "<group>"; };
 		1EF692AE18256BA4009C813F /* HoennTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoennTVC.h; sourceTree = "<group>"; };
 		1EF692AF18256BA4009C813F /* HoennTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoennTVC.m; sourceTree = "<group>"; };
 		1EF692B018256BA4009C813F /* JohtoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JohtoTVC.h; sourceTree = "<group>"; };
@@ -1491,7 +1491,7 @@
 				1E1872C718256E63003259B9 /* libz.1.1.3.dylib in Frameworks */,
 				1E1872C818256E63003259B9 /* MobileCoreServices.framework in Frameworks */,
 				1E1872C918256E63003259B9 /* QuartzCore.framework in Frameworks */,
-				1EB1D0F8185A8CA800A1B63B /* Parse.framework in Frameworks */,
+				1E874D3E185B70680010D043 /* Parse.framework in Frameworks */,
 				1E1872CA18256E63003259B9 /* Security.framework in Frameworks */,
 				1E1872CB18256E63003259B9 /* StoreKit.framework in Frameworks */,
 				1E1872CC18256E63003259B9 /* SystemConfiguration.framework in Frameworks */,
@@ -2247,7 +2247,7 @@
 		1E9D092F17EAAB2E002CBAD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1EB1D0F7185A8CA800A1B63B /* Parse.framework */,
+				1E874D3D185B70680010D043 /* Parse.framework */,
 				1E1872BB18256E63003259B9 /* AudioToolbox.framework */,
 				1E1872BC18256E63003259B9 /* CFNetwork.framework */,
 				1E1872BD18256E63003259B9 /* CoreLocation.framework */,
