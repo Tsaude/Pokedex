@@ -3239,6 +3239,7 @@
 		1E9D096917EAAB2E002CBAD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Pokedex";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
@@ -3251,6 +3252,7 @@
 		1E9D096A17EAAB2E002CBAD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Pokedex";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
