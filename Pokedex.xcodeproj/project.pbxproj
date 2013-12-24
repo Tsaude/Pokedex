@@ -707,6 +707,12 @@
 		1E673A0D18538E0200D2057A /* 648PMS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E67376B18538E0200D2057A /* 648PMS.png */; };
 		1E673A0E18538E0200D2057A /* 649MS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E67376C18538E0200D2057A /* 649MS.png */; };
 		1E874D3E185B70680010D043 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E874D3D185B70680010D043 /* Parse.framework */; };
+		1E97278A1869013A0068BEDB /* NationalCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9727891869013A0068BEDB /* NationalCVC.m */; };
+		1E97278F186903140068BEDB /* PokemonCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97278E186903130068BEDB /* PokemonCVCell.m */; };
+		1E9727961869074C0068BEDB /* pokeball.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9727921869074C0068BEDB /* pokeball.png */; };
+		1E9727971869074C0068BEDB /* pokeball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9727931869074C0068BEDB /* pokeball@2x.png */; };
+		1E9727981869074C0068BEDB /* pokeballDim.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9727941869074C0068BEDB /* pokeballDim.png */; };
+		1E9727991869074C0068BEDB /* pokeballDim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9727951869074C0068BEDB /* pokeballDim@2x.png */; };
 		1E9D093117EAAB2E002CBAD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093017EAAB2E002CBAD7 /* UIKit.framework */; };
 		1E9D093317EAAB2E002CBAD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093217EAAB2E002CBAD7 /* Foundation.framework */; };
 		1E9D093517EAAB2E002CBAD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093417EAAB2E002CBAD7 /* CoreGraphics.framework */; };
@@ -1443,6 +1449,14 @@
 		1E67376B18538E0200D2057A /* 648PMS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 648PMS.png; sourceTree = "<group>"; };
 		1E67376C18538E0200D2057A /* 649MS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 649MS.png; sourceTree = "<group>"; };
 		1E874D3D185B70680010D043 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Pokedex/Parse.framework; sourceTree = "<group>"; };
+		1E9727881869013A0068BEDB /* NationalCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NationalCVC.h; sourceTree = "<group>"; };
+		1E9727891869013A0068BEDB /* NationalCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NationalCVC.m; sourceTree = "<group>"; };
+		1E97278D186903130068BEDB /* PokemonCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonCVCell.h; sourceTree = "<group>"; };
+		1E97278E186903130068BEDB /* PokemonCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonCVCell.m; sourceTree = "<group>"; };
+		1E9727921869074C0068BEDB /* pokeball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pokeball.png; path = Images/pokeball.png; sourceTree = "<group>"; };
+		1E9727931869074C0068BEDB /* pokeball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pokeball@2x.png"; path = "Images/pokeball@2x.png"; sourceTree = "<group>"; };
+		1E9727941869074C0068BEDB /* pokeballDim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pokeballDim.png; path = Images/pokeballDim.png; sourceTree = "<group>"; };
+		1E9727951869074C0068BEDB /* pokeballDim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pokeballDim@2x.png"; path = "Images/pokeballDim@2x.png"; sourceTree = "<group>"; };
 		1E9D092D17EAAB2E002CBAD7 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D093017EAAB2E002CBAD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E9D093217EAAB2E002CBAD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1544,7 +1558,7 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
-		1E6734CA18538DFE00D2057A /* Images */ = {
+		1E6734CA18538DFE00D2057A /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
 				1E6734CB18538DFE00D2057A /* 001MS.png */,
@@ -2222,7 +2236,50 @@
 				1E67376B18538E0200D2057A /* 648PMS.png */,
 				1E67376C18538E0200D2057A /* 649MS.png */,
 			);
+			name = Pokemon;
 			path = Images;
+			sourceTree = "<group>";
+		};
+		1E97278B1869014D0068BEDB /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				1EF692AE18256BA4009C813F /* HoennTVC.h */,
+				1EF692AF18256BA4009C813F /* HoennTVC.m */,
+				1EF692B018256BA4009C813F /* JohtoTVC.h */,
+				1EF692B118256BA4009C813F /* JohtoTVC.m */,
+				1EF692B218256BA4009C813F /* KantoTVC.h */,
+				1EF692B318256BA4009C813F /* KantoTVC.m */,
+				1EF692B418256BA4009C813F /* NationalTVC.h */,
+				1EF692B518256BA4009C813F /* NationalTVC.m */,
+				1EF692BF18256BA4009C813F /* SinnohTVC.h */,
+				1EF692C018256BA4009C813F /* SinnohTVC.m */,
+				1EF692C118256BA4009C813F /* UnovaTVC.h */,
+				1EF692C218256BA4009C813F /* UnovaTVC.m */,
+			);
+			name = TVC;
+			sourceTree = "<group>";
+		};
+		1E97278C186901630068BEDB /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				1E97278D186903130068BEDB /* PokemonCVCell.h */,
+				1E97278E186903130068BEDB /* PokemonCVCell.m */,
+				1E9727881869013A0068BEDB /* NationalCVC.h */,
+				1E9727891869013A0068BEDB /* NationalCVC.m */,
+			);
+			name = CVC;
+			sourceTree = "<group>";
+		};
+		1E972790186907160068BEDB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1E9727921869074C0068BEDB /* pokeball.png */,
+				1E9727931869074C0068BEDB /* pokeball@2x.png */,
+				1E9727941869074C0068BEDB /* pokeballDim.png */,
+				1E9727951869074C0068BEDB /* pokeballDim@2x.png */,
+				1E6734CA18538DFE00D2057A /* Pokemon */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		1E9D092417EAAB2D002CBAD7 = {
@@ -2278,7 +2335,7 @@
 				1EF692BC18256BA4009C813F /* PokedexTVC.m */,
 				1EF692BD18256BA4009C813F /* Pokemon.h */,
 				1EF692BE18256BA4009C813F /* Pokemon.m */,
-				1E6734CA18538DFE00D2057A /* Images */,
+				1E972790186907160068BEDB /* Images */,
 				1E9D093717EAAB2E002CBAD7 /* Supporting Files */,
 			);
 			path = Pokedex;
@@ -2303,18 +2360,8 @@
 		1EC66E0B183BE57D00734983 /* Regions */ = {
 			isa = PBXGroup;
 			children = (
-				1EF692AE18256BA4009C813F /* HoennTVC.h */,
-				1EF692AF18256BA4009C813F /* HoennTVC.m */,
-				1EF692B018256BA4009C813F /* JohtoTVC.h */,
-				1EF692B118256BA4009C813F /* JohtoTVC.m */,
-				1EF692B218256BA4009C813F /* KantoTVC.h */,
-				1EF692B318256BA4009C813F /* KantoTVC.m */,
-				1EF692B418256BA4009C813F /* NationalTVC.h */,
-				1EF692B518256BA4009C813F /* NationalTVC.m */,
-				1EF692BF18256BA4009C813F /* SinnohTVC.h */,
-				1EF692C018256BA4009C813F /* SinnohTVC.m */,
-				1EF692C118256BA4009C813F /* UnovaTVC.h */,
-				1EF692C218256BA4009C813F /* UnovaTVC.m */,
+				1E97278B1869014D0068BEDB /* TVC */,
+				1E97278C186901630068BEDB /* CVC */,
 			);
 			name = Regions;
 			sourceTree = "<group>";
@@ -2433,6 +2480,7 @@
 				1E67379818538E0200D2057A /* 044MS.png in Resources */,
 				1E6738F418538E0200D2057A /* 386SMS.png in Resources */,
 				1E67391F18538E0200D2057A /* 423MS.png in Resources */,
+				1E9727981869074C0068BEDB /* pokeballDim.png in Resources */,
 				1E67390618538E0200D2057A /* 404MS.png in Resources */,
 				1E6737EF18538E0200D2057A /* 131MS.png in Resources */,
 				1E6738B418538E0200D2057A /* 328MS.png in Resources */,
@@ -2836,6 +2884,7 @@
 				1E6738AC18538E0200D2057A /* 320MS.png in Resources */,
 				1E67389218538E0200D2057A /* 294MS.png in Resources */,
 				1E67386618538E0200D2057A /* 250MS.png in Resources */,
+				1E9727991869074C0068BEDB /* pokeballDim@2x.png in Resources */,
 				1E6737A318538E0200D2057A /* 055MS.png in Resources */,
 				1E67384818538E0200D2057A /* 220MS.png in Resources */,
 				1E67392B18538E0200D2057A /* 435MS.png in Resources */,
@@ -2969,6 +3018,7 @@
 				1E6739D518538E0200D2057A /* 593MS.png in Resources */,
 				1E6739DA18538E0200D2057A /* 598MS.png in Resources */,
 				1E6738D018538E0200D2057A /* 353MS.png in Resources */,
+				1E9727961869074C0068BEDB /* pokeball.png in Resources */,
 				1E67377118538E0200D2057A /* 005MS.png in Resources */,
 				1E6739E518538E0200D2057A /* 609MS.png in Resources */,
 				1E67387E18538E0200D2057A /* 274MS.png in Resources */,
@@ -3061,6 +3111,7 @@
 				1E6738E818538E0200D2057A /* 377MS.png in Resources */,
 				1E6739C918538E0200D2057A /* 583MS.png in Resources */,
 				1E67384E18538E0200D2057A /* 226MS.png in Resources */,
+				1E9727971869074C0068BEDB /* pokeball@2x.png in Resources */,
 				1E6737B118538E0200D2057A /* 069MS.png in Resources */,
 				1E673A0618538E0200D2057A /* 642MS.png in Resources */,
 				1E67395D18538E0200D2057A /* 480MS.png in Resources */,
@@ -3121,6 +3172,7 @@
 			files = (
 				1EF692CE18256BA4009C813F /* SinnohTVC.m in Sources */,
 				1EF692C518256BA4009C813F /* JohtoTVC.m in Sources */,
+				1E97278A1869013A0068BEDB /* NationalCVC.m in Sources */,
 				1E9D093D17EAAB2E002CBAD7 /* main.m in Sources */,
 				1EF692C418256BA4009C813F /* HoennTVC.m in Sources */,
 				1EF692CA18256BA4009C813F /* Pokedex.m in Sources */,
@@ -3128,6 +3180,7 @@
 				1EF692CC18256BA4009C813F /* PokedexTVC.m in Sources */,
 				1E9D094117EAAB2E002CBAD7 /* AppDelegate.m in Sources */,
 				1EF692C618256BA4009C813F /* KantoTVC.m in Sources */,
+				1E97278F186903140068BEDB /* PokemonCVCell.m in Sources */,
 				1EF692C718256BA4009C813F /* NationalTVC.m in Sources */,
 				1EF692CD18256BA4009C813F /* Pokemon.m in Sources */,
 			);
