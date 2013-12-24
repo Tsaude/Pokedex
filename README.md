@@ -6,3 +6,5 @@ The idea for this app came from a friend of mine who said, "Hey! ... We should c
 Thus, my Pokedex app was born.  
 
 I used the Parse framework to create a shared database of Pokemon and modify that database between phones.  I used a table view to represent the data, along with the checkmark to show if they have been caught or not.
+
+-Tucker Saude
