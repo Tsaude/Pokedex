@@ -66,7 +66,7 @@
     
     self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:myListPath];
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"count of filtered pokedex: %d", self.filteredPokedex.count);
+        NSLog(@"count of filtered pokedex: %@", @(self.filteredPokedex.count));
         return [self.filteredPokedex count];
     }else{
         return [self.pokedex count]+1;

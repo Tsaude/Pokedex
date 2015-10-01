@@ -718,7 +718,6 @@
 		1E9D094717EAAB2E002CBAD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D094617EAAB2E002CBAD7 /* Default-568h@2x.png */; };
 		1E9D094A17EAAB2E002CBAD7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D094817EAAB2E002CBAD7 /* MainStoryboard_iPhone.storyboard */; };
 		1E9D094D17EAAB2E002CBAD7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D094B17EAAB2E002CBAD7 /* MainStoryboard_iPad.storyboard */; };
-		1E9D095817EAAB2E002CBAD7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */; };
 		1E9D095917EAAB2E002CBAD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093017EAAB2E002CBAD7 /* UIKit.framework */; };
 		1E9D095A17EAAB2E002CBAD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9D093217EAAB2E002CBAD7 /* Foundation.framework */; };
 		1EF692C418256BA4009C813F /* HoennTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF692AF18256BA4009C813F /* HoennTVC.m */; };
@@ -1458,8 +1457,7 @@
 		1E9D094617EAAB2E002CBAD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1E9D094917EAAB2E002CBAD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		1E9D094C17EAAB2E002CBAD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		1E9D095617EAAB2E002CBAD7 /* PokedexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1E9D095617EAAB2E002CBAD7 /* PokedexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF692AE18256BA4009C813F /* HoennTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoennTVC.h; sourceTree = "<group>"; };
 		1EF692AF18256BA4009C813F /* HoennTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoennTVC.m; sourceTree = "<group>"; };
 		1EF692B018256BA4009C813F /* JohtoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JohtoTVC.h; sourceTree = "<group>"; };
@@ -1505,7 +1503,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9D095817EAAB2E002CBAD7 /* SenTestingKit.framework in Frameworks */,
 				1E9D095917EAAB2E002CBAD7 /* UIKit.framework in Frameworks */,
 				1E9D095A17EAAB2E002CBAD7 /* Foundation.framework in Frameworks */,
 			);
@@ -2239,7 +2236,7 @@
 			isa = PBXGroup;
 			children = (
 				1E9D092D17EAAB2E002CBAD7 /* Pokedex.app */,
-				1E9D095617EAAB2E002CBAD7 /* PokedexTests.octest */,
+				1E9D095617EAAB2E002CBAD7 /* PokedexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2260,7 +2257,6 @@
 				1E9D093017EAAB2E002CBAD7 /* UIKit.framework */,
 				1E9D093217EAAB2E002CBAD7 /* Foundation.framework */,
 				1E9D093417EAAB2E002CBAD7 /* CoreGraphics.framework */,
-				1E9D095717EAAB2E002CBAD7 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2355,8 +2351,8 @@
 			);
 			name = PokedexTests;
 			productName = PokedexTests;
-			productReference = 1E9D095617EAAB2E002CBAD7 /* PokedexTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 1E9D095617EAAB2E002CBAD7 /* PokedexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -2364,7 +2360,8 @@
 		1E9D092517EAAB2D002CBAD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tucker Saude";
 			};
 			buildConfigurationList = 1E9D092817EAAB2D002CBAD7 /* Build configuration list for PBXProject "Pokedex" */;
@@ -3192,6 +3189,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -3243,6 +3241,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "Pokedex/Pokedex-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TuckerSaude.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3255,6 +3254,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "Pokedex/Pokedex-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TuckerSaude.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3267,13 +3267,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "PokedexTests/PokedexTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -3284,13 +3284,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pokedex/Pokedex-Prefix.pch";
 				INFOPLIST_FILE = "PokedexTests/PokedexTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

@@ -9,6 +9,5 @@
 #import "NationalTVC.h"
 
 @interface SinnohTVC : NationalTVC
-@property (weak, nonatomic) IBOutlet UISearchBar *pokemonSearchBar;
 
 @end

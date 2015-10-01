@@ -9,6 +9,5 @@
 #import "NationalTVC.h"
 
 @interface UnovaTVC : NationalTVC
-@property (weak, nonatomic) IBOutlet UISearchBar *pokemonSearchBar;
 
 @end

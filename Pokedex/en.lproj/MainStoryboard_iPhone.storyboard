@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AEA-2W-nDj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AEA-2W-nDj">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Select a Pokedex-->
+        <!--Select a Pokedex-->
         <scene sceneID="eo1-JM-n1t">
             <objects>
                 <tableViewController id="Dn5-UF-VyA" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="-434" y="1050"/>
         </scene>
-        <!--UnovaTVC-->
+        <!--Unova-->
         <scene sceneID="mE6-ps-d9t">
             <objects>
                 <tableViewController id="5V1-Gz-0lL" customClass="UnovaTVC" sceneMemberID="viewController">
@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bZ4-fx-c3R">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="bZ4-fx-c3R">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZ4-fx-c3R" id="a0C-RQ-BSH">
@@ -169,13 +169,15 @@
                             <outlet property="delegate" destination="5V1-Gz-0lL" id="8L3-5d-fkS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="HFS-af-PRR"/>
+                    <navigationItem key="navigationItem" title="Unova" id="HFS-af-PRR">
+                        <barButtonItem key="backBarButtonItem" title="back" id="8ml-1w-Veo"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNV-ul-yl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-43" y="1514"/>
         </scene>
-        <!--SinnohTVC-->
+        <!--Sinnoh-->
         <scene sceneID="8dF-x2-NcQ">
             <objects>
                 <tableViewController id="kLC-OF-mHG" customClass="SinnohTVC" sceneMemberID="viewController">
@@ -184,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7EQ-Nk-x58">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="7EQ-Nk-x58">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7EQ-Nk-x58" id="pLL-rR-m2M">
@@ -198,13 +200,15 @@
                             <outlet property="delegate" destination="kLC-OF-mHG" id="bTP-If-0o1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3a6-xm-oY2"/>
+                    <navigationItem key="navigationItem" title="Sinnoh" id="3a6-xm-oY2">
+                        <barButtonItem key="backBarButtonItem" title="back" id="67B-f9-JmR"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abb-wX-ZSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="1076"/>
+            <point key="canvasLocation" x="597" y="1336"/>
         </scene>
-        <!--HoennTVC-->
+        <!--Hoenn-->
         <scene sceneID="RMN-dZ-fdf">
             <objects>
                 <tableViewController id="S2B-59-oSX" customClass="HoennTVC" sceneMemberID="viewController">
@@ -213,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sOe-GI-xy5">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="sOe-GI-xy5">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sOe-GI-xy5" id="FbB-CY-03A">
@@ -227,11 +231,13 @@
                             <outlet property="delegate" destination="S2B-59-oSX" id="0B4-BC-gi9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hFV-AG-JHe"/>
+                    <navigationItem key="navigationItem" title="Hoenn" id="hFV-AG-JHe">
+                        <barButtonItem key="backBarButtonItem" title="back" id="Xbc-rP-m8w"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CzY-yj-aU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685" y="558"/>
+            <point key="canvasLocation" x="805" y="778"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V17-oc-dZN">
@@ -248,7 +254,7 @@
             </objects>
             <point key="canvasLocation" x="-970" y="1050"/>
         </scene>
-        <!--NationalTVC - National Pokedex-->
+        <!--National Pokedex-->
         <scene sceneID="stA-Pr-XsK">
             <objects>
                 <tableViewController title="National Pokedex" id="Mqq-lp-yk7" customClass="NationalTVC" sceneMemberID="viewController">
@@ -265,7 +271,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xJV-Ss-qkF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="xJV-Ss-qkF">
                                 <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJV-Ss-qkF" id="uEV-v7-62Z">
@@ -279,7 +285,9 @@
                             <outlet property="delegate" destination="Mqq-lp-yk7" id="Rv6-zw-Gqc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="National Pokedex" id="5C4-KD-C4p"/>
+                    <navigationItem key="navigationItem" title="National Pokedex" id="5C4-KD-C4p">
+                        <barButtonItem key="backBarButtonItem" title="back" id="ozz-ZU-tFN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="pokemonSearchBar" destination="Agm-ai-b1g" id="5Ka-qm-X1d"/>
                         <outlet property="searchDisplayController" destination="h5K-nu-V5A" id="hpD-I7-pqy"/>
@@ -298,7 +306,7 @@
             </objects>
             <point key="canvasLocation" x="43" y="169"/>
         </scene>
-        <!--KantoTVC-->
+        <!--Kanto-->
         <scene sceneID="njJ-g5-9gL">
             <objects>
                 <tableViewController id="CLn-cf-Chm" customClass="KantoTVC" sceneMemberID="viewController">
@@ -307,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5ib-6h-WLR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="5ib-6h-WLR">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ib-6h-WLR" id="1yd-zR-Dzu">
@@ -321,13 +329,15 @@
                             <outlet property="delegate" destination="CLn-cf-Chm" id="jYP-Ft-PSo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Atv-aN-bh1"/>
+                    <navigationItem key="navigationItem" title="Kanto" id="Atv-aN-bh1">
+                        <barButtonItem key="backBarButtonItem" title="back" id="FAE-Id-fUj"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKA-ks-yck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="285"/>
+            <point key="canvasLocation" x="533" y="-347"/>
         </scene>
-        <!--JohtoTVC-->
+        <!--Johto-->
         <scene sceneID="taM-tO-gGA">
             <objects>
                 <tableViewController id="so5-4U-JEs" customClass="JohtoTVC" sceneMemberID="viewController">
@@ -336,7 +346,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8xb-sa-vaM">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokedexCell" id="8xb-sa-vaM">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8xb-sa-vaM" id="BG3-95-Q6U">
@@ -350,11 +360,13 @@
                             <outlet property="delegate" destination="so5-4U-JEs" id="UHr-Te-S8L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MMy-do-lHN"/>
+                    <navigationItem key="navigationItem" title="Johto" id="MMy-do-lHN">
+                        <barButtonItem key="backBarButtonItem" title="back" id="PZ0-3Q-bWd"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9H-1H-MHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="446"/>
+            <point key="canvasLocation" x="447" y="218"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

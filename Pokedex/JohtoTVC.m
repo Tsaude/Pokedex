@@ -59,7 +59,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     myListPath = [[self docsDir]stringByAppendingPathComponent:@"j.plist"];
     
@@ -70,9 +70,9 @@
     
     self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:myListPath];
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"count of filtered pokedex: %d", self.filteredPokedex.count);
         return [self.filteredPokedex count];
-    }else{
+    }
+    else {
         return [self.pokedex count]+1;
     }
 }

@@ -9,6 +9,5 @@
 #import "NationalTVC.h"
 
 @interface HoennTVC : NationalTVC
-@property (weak, nonatomic) IBOutlet UISearchBar *pokemonSearchBar;
 
 @end

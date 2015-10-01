@@ -15,18 +15,6 @@
 @implementation NationalTVC
 
 
--(id)init{
-    self = [super initWithStyle:UITableViewStyleGrouped];
-    if (self){
-        
-    }
-    return self;
-}
-
--(id)initWithStyle:(UITableViewStyle)style{
-    return [self init];
-}
-
 -(NSString*)docsDir{
     //helper method
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
@@ -103,7 +91,7 @@
 {
 
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"count of filtered pokedex: %d", self.filteredPokedex.count);
+        NSLog(@"count of filtered pokedex: %@", @(self.filteredPokedex.count));
         return [self.filteredPokedex count];
     } else {
         return [self.pokedex count]+1;// Change
@@ -126,12 +114,12 @@
     if (indexPath.row == 0 && tableView != self.searchDisplayController.searchResultsTableView) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TallyCell"];
         int numberCaughtPokemon = [self countThePokemon];
-        cell.textLabel.text = [NSString stringWithFormat:@"%d/%d", numberCaughtPokemon, self.pokedex.count];
+        cell.textLabel.text = [NSString stringWithFormat:@"%d/%@", numberCaughtPokemon, @(self.pokedex.count)];
         [cell setUserInteractionEnabled:NO];
     }else{
     
         //setup to get the right pokemon
-        NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%d", indexPath.row]];
+        NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%@", @(indexPath.row)]];
         NSArray* objects = [[pokeDict objectForKey:@"pic"] componentsSeparatedByString:@"."];
         int pokenumber = [[objects objectAtIndex:0] intValue];
         Pokemon*pkm;
@@ -146,7 +134,7 @@
         
         //configure cell names
         [[cell textLabel] setText:pkm.name]; //cell Name
-        [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d", indexPath.row]]; //Cell detail
+        [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@", @(indexPath.row)]]; //Cell detail
         UIImage* img = [UIImage imageNamed:pkm.image]; //get image
         [cell.imageView setImage:img];// set cell Image
         
@@ -167,7 +155,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    NSMutableDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%d", indexPath.row]]; //grabbing pokemon from plist, so we know what order they go in, in the pokedex
+    NSMutableDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%@", @(indexPath.row)]]; //grabbing pokemon from plist, so we know what order they go in, in the pokedex
     NSArray* objects = [[pokeDict objectForKey:@"pic"] componentsSeparatedByString:@"."]; //splits the pic number to get national dex number
     int pokenumber = 0;
     if (tableView == self.searchDisplayController.searchResultsTableView){

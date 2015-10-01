@@ -58,7 +58,7 @@
     
     
     //setup to get the right pokemon
-    NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%d", indexPath.row]];
+    NSDictionary* pokeDict = [self.pokedex objectForKey:[NSString stringWithFormat:@"%@", @(indexPath.row)]];
     NSArray* objects = [[pokeDict objectForKey:@"pic"] componentsSeparatedByString:@"."];
     int pokenumber = [[objects objectAtIndex:0] intValue];
     Pokemon*pkm;
@@ -73,7 +73,7 @@
     
     //configure cell names
     [[cell textLabel] setText:pkm.name]; //cell Name
-    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d", indexPath.row]]; //Cell detail
+    [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@", @(indexPath.row)]]; //Cell detail
     UIImage* img = [UIImage imageNamed:pkm.image]; //get image
     [cell.imageView setImage:img];// set cell Image
     
@@ -102,9 +102,9 @@
         [[NSFileManager defaultManager]copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"uBW" ofType:@"plist"] toPath:myListPath error:nil];
     }
     
-    self.pokedex = [NSDictionary dictionaryWithContentsOfFile:myListPath];
+    self.pokedex = [NSMutableDictionary dictionaryWithContentsOfFile:myListPath];
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        NSLog(@"count of filtered pokedex: %d", self.filteredPokedex.count);
+        NSLog(@"count of filtered pokedex: %lu", (unsigned long)self.filteredPokedex.count);
         return [self.filteredPokedex count];
     }else{
         return [self.pokedex count];
